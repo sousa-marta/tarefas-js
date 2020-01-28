@@ -1,4 +1,4 @@
-//EVENTOS:
+/* -------------------- EVENTOS ---------------------- */
 //Exe2: criar botão para dar um alerta quando clicado
 let btnHello = document.getElementById('btnHello')
 
@@ -56,3 +56,19 @@ btnSend.addEventListener('click',(event)=>{
 
 //9. Fazer com que o addEventListener criado na imagem imprima em linha de comando a localização do mouse em x e y.
 // Resolvido no próprio exercício 5
+
+
+/* -------------------- TIMERS ---------------------- */
+//1. Se o usuário passar 10 segundos nessa página, seja exibido um alert que diga “tempo esgotado!
+function timeUP(){
+  alert('Tempo esgotado')
+}
+
+setTimeout(timeUP,30000)
+
+//2. A cada 5 segundos que ele passe na página, fazer com que seja exibido um alert que diga “hora do intervalo”.
+function breakTime(){
+  alert('Hora do intervalo')
+}
+
+setInterval(breakTime, 15000)
