@@ -10,11 +10,19 @@
 </head>
 <body>
   <main class="container">
-    <button id="btnHello" class="btn btn-primary mt-5">Cumprimentar</button>
-    <button id="btnBckg" class="btn btn-secondary mt-5">Alterar Fundo</button>
-    <br>
-    <img src="img/dog.jpg" id="dogImage" class="mt-3">
-  
+    <div class="row justify-content-center">
+      <button id="btnHello" class="btn btn-primary mt-5 mx-3">Cumprimentar</button>
+      <button id="btnBckg" class="btn btn-primary mt-5 mx-3">Alterar Fundo</button>
+
+    </div>
+    <div class="row d-flex justify-content-center mt-4">
+      <img src="img/dog.jpg" id="dogImage" class="col-5 p-0 mx-2 border border-dark">
+      <img src="img/cat.jpeg" id="catImage" class="col-5 p-0 mx-2 border border-dark">
+    </div>
+    <form action="https://www.google.com.br/" class="row d-flex justify-content-center mt-4">
+      <input type="text" name="name" id="name" placeholder="nome">
+      <button id="btnSend" type="submit">Enviar</button>
+    </form>
   </main>
   <script src="script.js"></script>
 </body>
